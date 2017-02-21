@@ -122,3 +122,13 @@ export function removeProps(object, remove) {
 export function isDefined(value) {
   return typeof value !== 'undefined';
 }
+
+/**
+ * Returns the display name for the given component.
+ *
+ * @param {Object} component
+ * @returns {string}
+ */
+export function getComponentDisplayName(component) {
+  return component.displayName || component.name || 'Component';
+}
